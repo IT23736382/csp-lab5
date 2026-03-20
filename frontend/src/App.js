@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState(null);
 
 
-  const API_URL = "http://localhost:5102/api/data";
+  const API_URL = "https://csp-lab5-backend-dgfrhfg2dwfygnab.westindia-01.azurewebsites.net/";
 
   useEffect(() => {
     fetch(API_URL)
