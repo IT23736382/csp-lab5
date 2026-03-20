@@ -6,11 +6,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // ⚠️ IMPORTANT BEFORE DEPLOYING:
-  // When running locally, leave this as your localhost URL (check your .NET terminal for the exact port).
-  // When deploying to Azure, change this string to your live Azure App Service URL!
-  // Example: const API_URL = "https://your-backend-app-name.azurewebsites.net/api/data";
-  const API_URL = "https://localhost:5102/api/data";
+
+  const API_URL = "http://localhost:5102/api/data";
 
   useEffect(() => {
     fetch(API_URL)
